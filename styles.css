@@ -26,14 +26,14 @@ body {
   background-color: var(--clr-bg);
 }
 
-.light {
+/* .light {
   --clr-bg: #e4e5f1;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #9394a5;
   --clr-primary: #484b6a;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+} */
 
 .dark {
   --clr-bg: #0b192e;
