@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="img/1f4be.png">
-
-    <script src="https://kit.fontawesome.com/fdfbb144df.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/projectStyleCards.css">
+    
     <title>Bianca Talabe</title>
+
   </head>
   <body class="dark" id="top">
     <header class="header center">
@@ -96,10 +95,72 @@
       </div>
 
       <!-- Projects -->
+
       <section id="projects" class="section projects">
         <h2 class="section__title">My Work</h2>
 
         <div class="projects__grid">
+
+          <div class="project">
+            <h3>Asky</h3>
+            <p class="project__description">
+              A full stack client inquiry management app for busy healthcare clinics
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JS</li>
+              <li class="project__stack-item">Node</li>
+              <li class="project__stack-item">Express</li>
+              <li class="project__stack-item">MongoDb</li>
+              <li class="project__stack-item">Tailwind</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">HTML</li>
+            </ul>
+
+            <a
+              href="https://github.com/biancaat/Asky"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a
+              href="https://allure-dujour.netlify.app/"
+              target="_blank"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>Astronomy Picture of the Day</h3>
+            <p class="project__description">
+              APOD web app built with NASA API integration.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JS</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://starburst-apod.netlify.app/"
+              target="_blank"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
           <div class="project">
             <h3>Allure Du Jour</h3>
             <p class="project__description">
@@ -157,33 +218,7 @@
             </a>
           </div>
 
-          <div class="project">
-            <h3>Astronomy Picture of the Day</h3>
-            <p class="project__description">
-              APOD web app built with NASA API integration.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">HTML</li>
-              <li class="project__stack-item">CSS</li>
-              <li class="project__stack-item">JS</li>
-            </ul>
-
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://starburst-apod.netlify.app/"
-              target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
+          
         </div>
       </section>
 
@@ -213,12 +248,14 @@
     </main>
 
     <footer class="footer">
-      <a
-        href="https://github.com/biancaat/clean-portfolio"
-        class="link footer__link"
-      >
+      <a href="https://github.com/biancaat/clean-portfolio" class="link footer__link">
         Bianca Talabe 2022. 
       </a>
+      <h3>
+      <a href="https://github.com/biancaat" class="link" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/bianca-talabe/"  class="link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/biancaat"  class="link" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+      </h3>
     </footer>
 
     <div class="scroll-container">
@@ -228,7 +265,17 @@
       </a>
     </div>
     </div>
+    
+<!-- Test -->
 
-    <script src="./script.js"></script>
+
+
+
+
+    <!-- Script files -->
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/fdfbb144df.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
   </body>
 </html>
