@@ -18,6 +18,9 @@
     <!-- Style sheets -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/projectStyleCards.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <title>Bianca Talabe</title>
 
@@ -27,9 +30,9 @@
       <h3>
         <!-- <a href="" class="link"
           >BT.</a> -->
-          <a href="https://github.com/biancaat" class="link" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/bianca-talabe/"  class="link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://twitter.com/biancaat"  class="link" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://github.com/biancaat" class="link" target="_blank"><i class="fa-brands fa-github text-2xl"></i></a>
+          <a href="https://www.linkedin.com/in/bianca-talabe/"  class="link" target="_blank"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+          <a href="https://twitter.com/biancaat"  class="link" target="_blank"><i class="fa-brands fa-square-twitter text-2xl"></i></a>
       </h3>
 
       <nav class="nav center">
@@ -64,8 +67,8 @@
     <main>
       <!-- About -->
       <div class="about center">
-        <h1>Hi, I'm <span class="about__name">Bianca 👋</span></h1>
-        <h2 class="about__role">I build things for the web.</h2>
+        <h1 class="text-6xl">Hi, I'm <span class="about__name">Bianca 👋</span></h1>
+        <h2 class="about__role text-3xl">I build things for the web.</h2>
         <p class="about__desc">
           I'm a software developer specializing in building full-stack web applications. Currently, I'm focused on creating accessible, human-centred products that make our lives easier.
         </p>
@@ -97,12 +100,22 @@
       <!-- Projects -->
 
       <section id="projects" class="section projects">
-        <h2 class="section__title">My Work</h2>
+        <h2 class="section__title text-3xl">My Work</h2>
 
         <div class="projects__grid">
 
           <div class="project">
-            <h3>Asky</h3>
+            <h3 class="text-2xl">Asky</h3>
+            <!-- NOTE: autoplay only works if video is muted -->
+            <video class="pt-4 mx-auto" width="400" autoplay muted>
+
+              <source src="img/Screen Recording 2022-10-21 at 6.mp4"
+                      type="video/webm">
+
+
+          </video>
+          
+
             <p class="project__description">
               A full stack client inquiry management app for busy healthcare clinics
             </p>
@@ -117,7 +130,7 @@
             </ul>
 
             <a
-              href="https://github.com/biancaat/Asky"
+              href="https://github.com/biancaat/Asky" target="_blank"
               aria-label="source code"
               class="link link--icon"
             >
@@ -134,7 +147,7 @@
           </div>
 
           <div class="project">
-            <h3>Astronomy Picture of the Day</h3>
+            <h3 class="text-2xl">Astronomy Picture of the Day</h3>
             <p class="project__description">
               APOD web app built with NASA API integration.
             </p>
@@ -162,7 +175,7 @@
           </div>
 
           <div class="project">
-            <h3>Allure Du Jour</h3>
+            <h3 class="text-2xl">Allure Du Jour</h3>
             <p class="project__description">
               A fully responsive, modern professional salon website.
             </p>
@@ -190,7 +203,7 @@
           </div>
 
           <div class="project">
-            <h3>Simmer Down</h3>
+            <h3 class="text-2xl">Simmer Down</h3>
             <p class="project__description">
               A fully responsive, professional restaurant website.
             </p>
